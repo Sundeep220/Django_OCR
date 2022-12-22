@@ -1,0 +1,20 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="container col-12 col-sm align-self-center">
+    <div >
+    <h2>Files</h2>
+    <hr>
+{% for doc in docs %}
+
+    <p ><a href="{{doc.fileURL}}">{{doc.file.name}}</a></p>
+    <p >Uploaded At: {{doc.uploaded_at}}</p>
+   
+    <a href="#" class="btn btn-primary">Extract text</a>
+    <hr>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}

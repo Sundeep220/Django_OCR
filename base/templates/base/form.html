@@ -1,0 +1,20 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% load static %}
+
+
+
+<div class="container">
+<div class="row col-12 col-sm col-md">
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="File">Choose the file you want to upload</label>
+        <input type="file" class="form-control-file" name="file">
+    </div>
+    
+    <input type="submit" class="btn btn-primary">
+</form>
+</div>
+</div>
+{% endblock %}
