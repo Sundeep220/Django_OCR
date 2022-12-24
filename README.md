@@ -1,6 +1,10 @@
 # Django_OCR
 - A small app that will allow the users to login and upload PDF and image documents. The server will generate text from the image/document by OCR or Optical Character Recognition using Tesseract.
 
+## APP DEMO
+
+https://drive.google.com/file/d/1h9u3k_ubcC5y34Go23hr7nAqr0tTCpcV/view?usp=sharing
+
 This Django web app uses pytesseract(https://pypi.org/project/pytesseract/) for OCR.
 
 Note: This app requires you to install https://github.com/tesseract-ocr/tesseract in your Operating System to be able to use the OCR.
