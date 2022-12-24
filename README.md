@@ -1,9 +1,9 @@
 # Django_OCR
-- A small app that will allow the users to login and upload PDF and image documents. The server will generate text from the image/document using OCR or Optical Character Recognition.
+- A small app that will allow the users to login and upload PDF and image documents. The server will generate text from the image/document by OCR or Optical Character Recognition using Tesseract.
 
 This Django web app uses pytesseract(https://pypi.org/project/pytesseract/) for OCR.
 
-Note: This app requires you to install https://github.com/tesseract-ocr/tesseract to be able to use the OCR. Also, this app is a MVP.
+Note: This app requires you to install https://github.com/tesseract-ocr/tesseract in your Operating System to be able to use the OCR.
 
 ## Features
 
@@ -14,7 +14,7 @@ Note: This app requires you to install https://github.com/tesseract-ocr/tesserac
 
 ## Installation
 
-This app uses PostgreSQL for DBMS. Download it from - https://github.com/tesseract-ocr/tesseract
+This app uses PostgreSQL for DBMS. Download it from - https://www.postgresql.org/download/
 
 Make sure you download and install tesseract(https://github.com/tesseract-ocr/tesseract) for OCR.
 ## Run Locally
@@ -24,6 +24,7 @@ Clone the project
 ```bash
   git clone: https://github.com/Sundeep220/Django_OCR
 ```
+
 - Before running this project: 
 
   -> Create a virtual environment, in Windows command is as follows: \
@@ -36,14 +37,15 @@ Clone the project
     Pre-requisites: Python, pip and django should be installed in your system. All the coding is done using VScode.
     1. To install the dependencies: \
        `pip install -r requirements.txt` 
-    2. Make the migrations:\
-        `python manage.py makemigrations` 
-    3. Migrate the tables: \
-        `python manage.py migrate` 
-    4. Create a superuser for your project: \
+    2. Before Applying the below steps make sure you have integerated postgres in you application.
+         Make the migrations:\
+            `python manage.py makemigrations` 
+         Migrate the tables: \
+            `python manage.py migrate` 
+    3. Create a superuser for your project: \
         `python manage.py createsuperuser`   
         This will prompt you to enter username, email and password for the superuser.  
-    5. Run the server using: \
+    4. Run the server using: \
         `python manage.py runserver`
 
 
