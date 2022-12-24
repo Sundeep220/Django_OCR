@@ -58,25 +58,22 @@ def logout_req(request):
     return render(request, 'base/form.html')
 
 
-def pdf_to_text(pdffile):
-    """
-    Funtion to convert PDF doc to Text doc using PyPDF2
-    """
-    # COMMENT: Obsolete helper function. Not in use anymore.
+# def pdf_to_text(pdffile):
 
-    # Read the file
-    pdf = PyPDF2.PdfFileReader(pdffile)
-    content = ""
-    print(pdf.getNumPages())
-    for ii in range(pdf.getNumPages()):
-        # Get the page
-        page = pdf.getPage(ii)
-        print(page.extract_text())
-        content += page.extract_text()
 
-    print(content)
+#     # Read the file
+#     pdf = PyPDF2.PdfFileReader(pdffile)
+#     content = ""
+#     print(pdf.getNumPages())
+#     for ii in range(pdf.getNumPages()):
+#         # Get the page
+#         page = pdf.getPage(ii)
+#         print(page.extract_text())
+#         content += page.extract_text()
 
-    return content
+#     print(content)
+
+#     return content
 
 
 def checkExt(file):
