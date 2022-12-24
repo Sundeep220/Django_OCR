@@ -5,6 +5,8 @@
 
 https://drive.google.com/file/d/1h9u3k_ubcC5y34Go23hr7nAqr0tTCpcV/view?usp=sharing
 
+##
+
 This Django web app uses pytesseract(https://pypi.org/project/pytesseract/) for OCR.
 
 Note: This app requires you to install https://github.com/tesseract-ocr/tesseract in your Operating System to be able to use the OCR.
