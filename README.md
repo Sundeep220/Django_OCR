@@ -62,3 +62,41 @@ To run this project, you will need to add the following environment variables to
 `DB_HOST`
 
 `DB_PORT`
+
+
+##App view: 
+
+- Home Page: 
+
+
+![dashboard](https://user-images.githubusercontent.com/93663329/209426494-4e962a8f-7417-4b26-ba35-35fa979b2234.png)
+
+
+- Uploaded doc page:
+
+
+![files](https://user-images.githubusercontent.com/93663329/209426517-452a06a9-0a85-478f-a475-bae38a2dc259.png)
+
+
+- Extracted text page:
+
+
+![details](https://user-images.githubusercontent.com/93663329/209426527-d77f4673-dd52-4030-ba68-86e9e9e492ea.png)
+
+
+- Login Page:
+
+
+![login1](https://user-images.githubusercontent.com/93663329/209426536-90078580-6796-4118-81e0-320fcd91fcfb.png)
+
+
+- Register Page:
+
+
+![registetr2](https://user-images.githubusercontent.com/93663329/209426546-04d810e9-ab21-46a0-8c2f-dcfcb6892ec3.png)
+
+
+
+
+
+
