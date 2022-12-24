@@ -22,7 +22,7 @@ Make sure you download and install tesseract(https://github.com/tesseract-ocr/te
 Clone the project
 
 ```bash
-  git clone https://github.com/PallavMarwaha/django-pdf
+  git clone: https://github.com/Sundeep220/Django_OCR
 ```
 - Before running this project: 
 
