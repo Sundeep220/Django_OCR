@@ -6,6 +6,7 @@
 <div class="container col-12 col-sm align-self-center">
     <h2 class="ml-3 mt-4">Files</h2>
     <hr>
+    {% if docs %}
 {% for doc in docs %}
 
         <div class="card border-dark">
@@ -26,5 +27,15 @@
         </div>
         <br>
         {% endfor %}
+        {% else %}
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">You haven't uploaded any documents. Go to dashboard to upload.</p>
+            <button class="card-link btn btn-outline-primary">
+                <a href="{% url 'home' %}" class="btn">Go to Dashboard</a>
+                </button>
+        </div>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
