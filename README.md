@@ -17,6 +17,13 @@ Note: This app requires you to install https://github.com/tesseract-ocr/tesserac
 This app uses PostgreSQL for DBMS. Download it from - https://github.com/tesseract-ocr/tesseract
 
 Make sure you download and install tesseract(https://github.com/tesseract-ocr/tesseract) for OCR.
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/PallavMarwaha/django-pdf
+```
 - Before running this project: 
 
   -> Create a virtual environment, in Windows command is as follows: \
