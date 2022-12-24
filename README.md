@@ -45,3 +45,20 @@ Clone the project
         This will prompt you to enter username, email and password for the superuser.  
     5. Run the server using: \
         `python manage.py runserver`
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file in the root folder
+
+`SECRET_KEY`
+
+`DB_NAME`
+
+`DB_USER`
+
+`DB_PASSWORD`
+
+`DB_HOST`
+
+`DB_PORT`
