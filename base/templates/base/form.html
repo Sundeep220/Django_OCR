@@ -5,11 +5,15 @@
 
 
 <div class="container">
-<div class="row col-12 col-sm col-md">
+<div class="card mt-5" style="padding:40px">
 <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="form-group">
-        <label for="File">Choose the file you want to upload</label>
+    
+        <div class="card-title">
+        <label for="File"><b>Choose the file you want to upload</b></label>
+        </div>
+
         <input type="file" class="form-control-file" name="file">
     </div>
     

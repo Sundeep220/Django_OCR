@@ -1,0 +1,20 @@
+{% extends 'base/main.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <h2 class="mb-5 mt-3">Extracted Text from pdf</h2>
+    
+    {% for it in item %}
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">{{it.title}}</h3><br>
+    
+            <p>{{it.body| linebreaks}}</p>
+            <a href="{{it.file.fileURL}}" class="card-link btn btn-primary">View Pdf</a>
+            <a href="{% url 'files' %}" class="card-link btn btn-danger">Go back</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

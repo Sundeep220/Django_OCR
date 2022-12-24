@@ -4,17 +4,25 @@
 
 
 <div class="container col-12 col-sm align-self-center">
-    <div >
-    <h2>Files</h2>
+    <h2 class="ml-3 mt-4">Files</h2>
     <hr>
 {% for doc in docs %}
 
-    <p ><a href="{{doc.fileURL}}">{{doc.file.name}}</a></p>
-    <p >Uploaded At: {{doc.uploaded_at}}</p>
-   
-    <a href="#" class="btn btn-primary">Extract text</a>
-    <hr>
-    {% endfor %}
-</div>
+        <div class="card border-dark">
+            <!-- <img class="thumbnail" src="{% static 'images/pdflogo.png' %}"> -->
+            <div class="card-body">
+                <img class="card-img-left" src="{{doc.ImageURL}}" alt="Card image cap" width="50px" height="60px">
+                <h6 class="card-title"><strong>{{doc.file.name}}</strong></h6>
+                
+                <p class="card-text">Uploaded At: {{doc.uploaded_at}}</p>
+                <button class="card-link btn btn-outline-success">
+                    <a class="btn" href="{{doc.fileURL}}">View file</a>
+                </button>
+                <button class="card-link btn btn-outline-primary">
+                <a href="{% url 'details' doc.id %}" class="btn">Extract text</a>
+                </button>
+            </div>
+        </div>
+        {% endfor %}
 </div>
 {% endblock %}
